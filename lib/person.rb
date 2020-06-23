@@ -61,6 +61,11 @@ class Person
     
     case topic
     when "politics"
+      self.happiness -= 2 
+      person.happiness -= 2 
+      first_word, second_word = ["partisan", "lobbyist"]
+    when "weather"
+      
   end 
 end
 
