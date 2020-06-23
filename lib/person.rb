@@ -65,7 +65,9 @@ class Person
       person.happiness -= 2 
       first_word, second_word = ["partisan", "lobbyist"]
     when "weather"
-      
+      self.happiness += 1 
+      person.happiness += 1 
+      first_word, second_word = ["sun", "rain"]
   end 
 end
 
