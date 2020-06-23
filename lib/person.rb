@@ -68,6 +68,9 @@ class Person
       self.happiness += 1 
       person.happiness += 1 
       first_word, second_word = ["sun", "rain"]
+    end 
+    
+    return "blah blah #{first_word} blah #{second_word}"
   end 
 end
 
