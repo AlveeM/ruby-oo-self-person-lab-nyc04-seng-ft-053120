@@ -53,6 +53,7 @@ class Person
     self.happiness += 3
     friend.happiness += 3
     return "Hi #{friend.name}! It's #{self.name}. How are you?"
+  end
 end
 
 stella = Person.new('Stella')
