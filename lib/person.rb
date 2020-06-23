@@ -1,1 +1,56 @@
-# your code goes here
+class Person
+  attr_reader :name, :happiness, :hygiene
+  attr_accessor :bank_account
+  
+  def initialize(name)
+    @name = name 
+    @bank_account = 25
+    @happiness = 8
+    @hygiene = 8
+  end 
+  
+  def happiness=(points)
+    @happiness = points
+    @happiness = 10 if @happiness > 10
+    @happiness = 0 if @happiness < 0 
+  end
+  
+  def hygiene=(points)
+    @hygiene = points
+    @hygiene = 10 if self.hygiene > 10
+    @hygiene = 0 if self.hygiene < 0
+  end
+  
+  def happy?
+    self.happiness > 7
+  end 
+  
+  def clean?
+    self.hygiene > 7
+  end
+  
+  def get_paid(salary)
+    self.bank_account += salary
+    return "all about the benjamins"
+  end
+  
+  def test 
+    self.happiness = 5 
+  end 
+  
+  def take_bath
+    self.happiness = 2
+    return "♪ Rub-a-dub just relaxing in the tub ♫"
+  end 
+end
+
+stella = Person.new('Stella')
+blanche = Person.new('Blanche')
+people = [stella, blanche]
+
+p stella.hygiene 
+stella.test
+p stella.hygiene
+
+
+
