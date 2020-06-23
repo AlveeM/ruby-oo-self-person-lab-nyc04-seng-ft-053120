@@ -73,14 +73,3 @@ class Person
     return "blah blah #{first_word} blah #{second_word}"
   end 
 end
-
-stella = Person.new('Stella')
-blanche = Person.new('Blanche')
-people = [stella, blanche]
-
-p stella.hygiene 
-stella.test
-p stella.hygiene
-
-
-
