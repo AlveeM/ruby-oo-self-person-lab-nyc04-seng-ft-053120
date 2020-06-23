@@ -47,6 +47,7 @@ class Person
     self.happiness += 2 
     self.hygiene -= 3 
     return "♪ another one bites the dust ♫"
+  end
 end
 
 stella = Person.new('Stella')
