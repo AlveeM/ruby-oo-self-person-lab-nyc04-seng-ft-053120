@@ -48,6 +48,11 @@ class Person
     self.hygiene -= 3 
     return "♪ another one bites the dust ♫"
   end
+  
+  def call_friend(friend)
+    self.happiness += 3
+    friend.happiness += 3
+    return "Hi #{friend.name}! It's #{self.name}. How are you?"
 end
 
 stella = Person.new('Stella')
